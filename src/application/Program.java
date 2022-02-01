@@ -49,7 +49,7 @@ public class Program {
 			int hours = sc.nextInt();
 			
 			HourContract contract = new HourContract(contractDate, valuePerHour, hours);
-			worker.getContracts().add(contract);
+			worker.addContract(contract);
 		}
 		System.out.println();
 		

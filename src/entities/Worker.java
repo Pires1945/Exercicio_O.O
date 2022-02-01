@@ -60,6 +60,14 @@ public class Worker {
 		return contracts;
 	}
 	
+	public void addContract(HourContract contract) {
+		contracts.add(contract);
+	}
+	
+	public void removeContract(HourContract contract) {
+		contracts.remove(contract);
+	}
+	
 	public Double income(int year, int month) {
 		double sum = baseSalary;
 		Calendar cal = Calendar.getInstance();
